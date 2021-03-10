@@ -7,8 +7,8 @@ static unsigned int gappx     = 8; /* gaps between windows */
 static unsigned int snap      = 8; /* snap pixel */
 static int showbar            = 1; /* 0 means no bar */
 static int topbar             = 1; /* 0 means bottom bar */
-static const char *fonts[]    = { "iosevka:size=10" };
-static const char dmenufont[] = "iosevka:size=10";
+static const char *fonts[]    = { "iosevka:size=9" };
+static const char dmenufont[] = "iosevka:size=9";
 static char normbgcolor[]     = "#222222";
 static char normbordercolor[] = "#444444";
 static char normfgcolor[]     = "#bbbbbb";
