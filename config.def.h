@@ -4,11 +4,11 @@
 /* appearance */
 static unsigned int borderpx  = 2; /* border pixel of windows */
 static unsigned int gappx     = 8; /* gaps between windows */
-static unsigned int snap      = 8; /* snap pixel */
+static unsigned int snap      = 0; /* snap pixel */
 static int showbar            = 1; /* 0 means no bar */
 static int topbar             = 1; /* 0 means bottom bar */
-static const char *fonts[]    = { "iosevka:size=9" };
-static const char dmenufont[] = "iosevka:size=9";
+static const char *fonts[]    = { "iosevka:pixelsize=12" };
+static const char dmenufont[] = "iosevka:pixelsize=12";
 static char normbgcolor[]     = "#222222";
 static char normbordercolor[] = "#444444";
 static char normfgcolor[]     = "#bbbbbb";
