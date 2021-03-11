@@ -1,7 +1,8 @@
 # dwm
 
-This is by build of dwm.
-These are the patches I used:
+This is my build of dwm.
+
+## patches
 
 https://dwm.suckless.org/patches/xresources/dwm-xresources-6.2.diff
 https://dwm.suckless.org/patches/actualfullscreen/dwm-actualfullscreen-20191112-cb3f58a.diff
