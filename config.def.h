@@ -7,8 +7,8 @@ static unsigned int gappx     = 8; /* gaps between windows */
 static unsigned int snap      = 0; /* snap pixel */
 static int showbar            = 1; /* 0 means no bar */
 static int topbar             = 1; /* 0 means bottom bar */
-static const char *fonts[]    = { "iosevka:pixelsize=12" };
-static const char dmenufont[] = "iosevka:pixelsize=12";
+static char font[]            = "iosevka:pixelsize=12";
+static const char *fonts[]    = { font };
 static char normbgcolor[]     = "#222222";
 static char normbordercolor[] = "#444444";
 static char normfgcolor[]     = "#bbbbbb";
@@ -58,7 +58,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2]                      = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[]                = { "dmenu_run", "-p", "Exec", "-m", dmenumon, "-fn", dmenufont, "-nf", normfgcolor, "-nb", normbgcolor, "-sf", selfgcolor, "-sb", selbgcolor, NULL };
+static const char *dmenucmd[]                = { "dmenu_run", "-p", "Exec", "-m", dmenumon, NULL };
 static const char *passmenucmd[]             = { "passmenu", "-p", "Pass", NULL };
 static const char *networkmanagerdmenucmd[]  = { "networkmanager_dmenu", NULL };
 static const char *screenlockcmd[]           = { "slock", NULL };
@@ -185,6 +185,7 @@ ResourcePref resources[] = {
 	{ "selbgcolor",        STRING,    &selbgcolor      },
 	{ "selbordercolor",    STRING,    &selbordercolor  },
 	{ "selfgcolor",        STRING,    &selfgcolor      },
+	{ "font",              STRING,    &font            },
 	{ "borderpx",          INTEGER,   &borderpx        },
 	{ "gappx",             INTEGER,   &gappx           },
 	{ "snap",              INTEGER,   &snap            },
