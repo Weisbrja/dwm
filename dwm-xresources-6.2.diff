@@ -44,9 +44,9 @@ index 1c0b587..e69f288 100644
 +static char selbordercolor[]        = "#005577";
 +static char selbgcolor[]            = "#005577";
 +static char *colors[][3] = {
-+	/*               fg           bg           border   */
-+	[SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
-+	[SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
++       /*               fg           bg           border   */
++       [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
++       [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
  };
  
  /* tagging */
@@ -75,19 +75,19 @@ index 1c0b587..e69f288 100644
 + * Xresources preferences to load at startup
 + */
 +ResourcePref resources[] = {
-+	{ "normbgcolor",       STRING,    &normbgcolor },
-+	{ "normbordercolor",   STRING,    &normbordercolor },
-+	{ "normfgcolor",       STRING,    &normfgcolor },
-+	{ "selbgcolor",        STRING,    &selbgcolor },
-+	{ "selbordercolor",    STRING,    &selbordercolor },
-+	{ "selfgcolor",        STRING,    &selfgcolor },
-+	{ "borderpx",          INTEGER,   &borderpx },
-+	{ "snap",              INTEGER,   &snap },
-+	{ "showbar",           INTEGER,   &showbar },
-+	{ "topbar",            INTEGER,   &topbar },
-+	{ "nmaster",           INTEGER,   &nmaster },
-+	{ "resizehints",       INTEGER,   &resizehints },
-+	{ "mfact",             FLOAT,     &mfact },
++		{ "normbgcolor",        STRING,  &normbgcolor },
++		{ "normbordercolor",    STRING,  &normbordercolor },
++		{ "normfgcolor",        STRING,  &normfgcolor },
++		{ "selbgcolor",         STRING,  &selbgcolor },
++		{ "selbordercolor",     STRING,  &selbordercolor },
++		{ "selfgcolor",         STRING,  &selfgcolor },
++		{ "borderpx",          	INTEGER, &borderpx },
++		{ "snap",          		INTEGER, &snap },
++		{ "showbar",          	INTEGER, &showbar },
++		{ "topbar",          	INTEGER, &topbar },
++		{ "nmaster",          	INTEGER, &nmaster },
++		{ "resizehints",       	INTEGER, &resizehints },
++		{ "mfact",      	 	FLOAT,   &mfact },
 +};
 +
  static Key keys[] = {
@@ -232,3 +232,4 @@ index 9fd0286..dc0d219 100644
  	if (pledge("stdio rpath proc exec", NULL) == -1)
 -- 
 2.26.2
+
