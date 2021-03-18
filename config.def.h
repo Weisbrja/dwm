@@ -58,8 +58,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2]                      = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[]                = { "dmenu_run", "-p", "Exec", "-m", dmenumon, NULL };
-static const char *passmenucmd[]             = { "passmenu", "-p", "Pass", NULL };
+static const char *dmenucmd[]                = { "dmenu_run", "-p", "Exec", "-i", "-m", dmenumon, NULL };
+static const char *passmenucmd[]             = { "passmenu", "-p", "Pass", "-i", NULL };
 static const char *networkmanagerdmenucmd[]  = { "networkmanager_dmenu", NULL };
 static const char *screenlockcmd[]           = { "slock", NULL };
 static const char *terminalcmd[]             = { "st", NULL };
