@@ -64,13 +64,15 @@ static const char *passotpmenucmd[]          = { "passotpmenu", "-p", "OTP", "-i
 static const char *networkmanagerdmenucmd[]  = { "networkmanager_dmenu", NULL };
 static const char *screenlockcmd[]           = { "slock", NULL };
 static const char *terminalcmd[]             = { "st", NULL };
-static const char *browsercmd[]              = { "firefox", NULL };
-static const char *ideacmd[]                 = { "idea", NULL };
+static const char *screenshotcmd[]           = { "scrot", "-s", "--freeze", NULL };
+static const char *switchkeyboardlayoutcmd[] = { "switch_keyboard_layout", NULL };
+static const char *blueberrycmd[]            = { "blueberry", NULL };
+static const char *pavucontrolcmd[]          = { "pavucontrol", NULL };
+static const char *firefoxcmd[]              = { "firefox", NULL };
 static const char *discordcmd[]              = { "discord", NULL };
 static const char *elementcmd[]              = { "element-desktop-nightly", NULL };
 static const char *telegramcmd[]             = { "telegram-desktop", NULL };
-static const char *blueberrycmd[]            = { "blueberry", NULL };
-static const char *switchkeyboardlayoutcmd[] = { "switch_keyboard_layout", NULL };
+static const char *intellijcmd[]             = { "idea", NULL };
 static const char *volumeupcmd[]             = { "volume_up", NULL };
 static const char *volumedowncmd[]           = { "volume_down", NULL };
 static const char *volumetogglecmd[]         = { "volume_toggle", NULL };
@@ -90,15 +92,17 @@ static Key keys[] = {
 	{ MODKEY,                         XK_o,                       spawn,            { .v = passotpmenucmd         }  },
 	{ MODKEY,                         XK_n,                       spawn,            { .v = networkmanagerdmenucmd }  },
 	/* start program */
-	{ MODKEY,                         XK_b,                       spawn,            { .v = blueberrycmd            } },
 	{ MODKEY,                         XK_space,                   spawn,            { .v = screenlockcmd           } },
 	{ MODKEY,                         XK_Return,                  spawn,            { .v = terminalcmd             } },
+	{ MODKEY,                         XK_s,                       spawn,            { .v = screenshotcmd           } },
 	{ MODKEY|ShiftMask,               XK_space,                   spawn,            { .v = switchkeyboardlayoutcmd } },
-	{ MODKEY|ShiftMask,               XK_w,                       spawn,            { .v = browsercmd              } },
-	{ MODKEY|ShiftMask,               XK_i,                       spawn,            { .v = ideacmd                 } },
-	{ MODKEY|ShiftMask,               XK_d,                       spawn,            { .v = discordcmd              } },
+	{ MODKEY|ShiftMask,               XK_b,                       spawn,            { .v = blueberrycmd            } },
+	{ MODKEY|ShiftMask,               XK_v,                       spawn,            { .v = pavucontrolcmd          } },
+	{ MODKEY|ShiftMask,               XK_w,                       spawn,            { .v = firefoxcmd              } },
 	{ MODKEY|ShiftMask,               XK_e,                       spawn,            { .v = elementcmd              } },
 	{ MODKEY|ShiftMask,               XK_t,                       spawn,            { .v = telegramcmd             } },
+	{ MODKEY|ShiftMask,               XK_d,                       spawn,            { .v = discordcmd              } },
+	{ MODKEY|ShiftMask,               XK_i,                       spawn,            { .v = intellijcmd             } },
 	/* quit program */
 	{ MODKEY|ShiftMask,               XK_c,                       killclient,       { 0 }                            },
 	/* quit dwm */
@@ -118,7 +122,7 @@ static Key keys[] = {
 	{ 0,                              XF86XK_MonBrightnessUp,     spawn,            { .v = brightnessupcmd     }     },
 	{ 0,                              XF86XK_MonBrightnessDown,   spawn,            { .v = brightnessdowncmd   }     },
 	/* toggle bar */
-	{ MODKEY,                         XK_s,                       togglebar,        { 0 }                            },
+	{ MODKEY,                         XK_b,                       togglebar,        { 0 }                            },
 	/* change layout */
 	{ MODKEY,                         XK_t,                       setlayout,        { .v = &layouts[0] }             },
 	{ MODKEY,                         XK_f,                       setlayout,        { .v = &layouts[1] }             },
