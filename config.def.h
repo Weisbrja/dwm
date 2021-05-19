@@ -66,8 +66,9 @@ static const char *screenlockcmd[]           = { "slock", NULL };
 static const char *terminalcmd[]             = { "st", NULL };
 static const char *browsercmd[]              = { "firefox", NULL };
 static const char *ideacmd[]                 = { "idea", NULL };
-static const char *telegramcmd[]             = { "telegram-desktop", NULL };
 static const char *discordcmd[]              = { "discord", NULL };
+static const char *elementcmd[]              = { "element-desktop-nightly", NULL };
+static const char *telegramcmd[]             = { "telegram-desktop", NULL };
 static const char *blueberrycmd[]            = { "blueberry", NULL };
 static const char *switchkeyboardlayoutcmd[] = { "switch_keyboard_layout", NULL };
 static const char *volumeupcmd[]             = { "volume_up", NULL };
@@ -95,8 +96,9 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,               XK_space,                   spawn,            { .v = switchkeyboardlayoutcmd } },
 	{ MODKEY|ShiftMask,               XK_w,                       spawn,            { .v = browsercmd              } },
 	{ MODKEY|ShiftMask,               XK_i,                       spawn,            { .v = ideacmd                 } },
-	{ MODKEY|ShiftMask,               XK_t,                       spawn,            { .v = telegramcmd             } },
 	{ MODKEY|ShiftMask,               XK_d,                       spawn,            { .v = discordcmd              } },
+	{ MODKEY|ShiftMask,               XK_e,                       spawn,            { .v = elementcmd              } },
+	{ MODKEY|ShiftMask,               XK_t,                       spawn,            { .v = telegramcmd             } },
 	/* quit program */
 	{ MODKEY|ShiftMask,               XK_c,                       killclient,       { 0 }                            },
 	/* quit dwm */
