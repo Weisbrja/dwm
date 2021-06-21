@@ -3,7 +3,7 @@
 
 /* appearance */
 static unsigned int borderpx  = 2; /* border pixel of windows */
-static unsigned int gappx     = 8; /* gaps between windows */
+static unsigned int gappx     = 6; /* gaps between windows */
 static unsigned int snap      = 0; /* snap pixel */
 static int showbar            = 1; /* 0 means no bar */
 static int topbar             = 1; /* 0 means bottom bar */
@@ -64,7 +64,7 @@ static const char *passotpmenucmd[]          = { "passotpmenu", "-p", "OTP", "-i
 static const char *networkmanagerdmenucmd[]  = { "networkmanager_dmenu", NULL };
 static const char *screenlockcmd[]           = { "slock", NULL };
 static const char *terminalcmd[]             = { "st", NULL };
-static const char *screenshotcmd[]           = { "scrot", "-s", "--freeze", NULL };
+static const char *screenshotcmd[]           = { "screenshot", NULL };
 static const char *switchkeyboardlayoutcmd[] = { "switch_keyboard_layout", NULL };
 static const char *blueberrycmd[]            = { "blueberry", NULL };
 static const char *pavucontrolcmd[]          = { "pavucontrol", NULL };
