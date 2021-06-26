@@ -7,7 +7,7 @@ static unsigned int gappx     = 6; /* gaps between windows */
 static unsigned int snap      = 0; /* snap pixel */
 static int showbar            = 1; /* 0 means no bar */
 static int topbar             = 1; /* 0 means bottom bar */
-static char font[]            = "iosevka:pixelsize=12:antialias=true:autohint=true";
+static char font[]            = "FiraCode:pixelsize=10:antialias=true:autohint=true";
 static const char *fonts[]    = { font };
 static char normbgcolor[]     = "#222222";
 static char normbordercolor[] = "#444444";
@@ -99,8 +99,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,               XK_space,                   spawn,            { .v = switchkeyboardlayoutcmd } },
 	{ MODKEY|ShiftMask,               XK_b,                       spawn,            { .v = blueberrycmd            } },
 	{ MODKEY|ShiftMask,               XK_v,                       spawn,            { .v = pavucontrolcmd          } },
-	{ MODKEY|ShiftMask,               XK_w,                       spawn,            { .v = bravecmd                } },
-	{ MODKEY|ShiftMask,               XK_f,                       spawn,            { .v = firefoxcmd              } },
+	{ MODKEY|ShiftMask,               XK_w,                       spawn,            { .v = firefoxcmd              } },
 	{ MODKEY|ShiftMask,               XK_e,                       spawn,            { .v = elementcmd              } },
 	{ MODKEY|ShiftMask,               XK_t,                       spawn,            { .v = telegramcmd             } },
 	{ MODKEY|ShiftMask,               XK_d,                       spawn,            { .v = discordcmd              } },
